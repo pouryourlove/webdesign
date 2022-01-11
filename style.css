@@ -5,6 +5,8 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
+/* MAIN COLOR: #087f5b */
+/* GRAY COLOR: #343a40 */
 
 * {
   margin: 0;
@@ -16,7 +18,9 @@ FONT SIZE SYSTEM (px)
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
-  font-family: 'inter',sans-serif;
+  font-family: "inter", sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
 }
 
 .container {
@@ -41,6 +45,31 @@ h2 {
   column-gap: 80px;
 }
 
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
@@ -85,11 +114,14 @@ img {
 
 .features-text {
   font-size: 18px;
-  line-height:1.7;
+  line-height: 1.7;
 }
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #087f5b;
+  color: #fff;
+  padding: 24px;
 }
 
 .testimonial-box {
@@ -106,7 +138,7 @@ img {
   font-style: italic;
   margin-bottom: 24px;
   font-size: 18px;
-  line-height:1.7;
+  line-height: 1.7;
 }
 
 /* CHAIRS */
@@ -122,7 +154,6 @@ h3 {
 .chair-details {
   list-style: none;
   margin-bottom: 24px;
-
 }
 
 .chair-details li {
@@ -148,4 +179,5 @@ h3 {
 footer {
   margin-bottom: 48px;
   font-size: 14px;
+  color: #495057;
 }
